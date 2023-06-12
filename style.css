@@ -16,8 +16,19 @@ a{
 body *{
     font-family: 'Oswald', sans-serif;
 }
+:root {
+    --background-color: rgb(75, 43, 43);
+    --border-radius: 15px;
+}
 #container {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    width: 100%;
     padding: 40px;
+    max-width: 1440px;
+    margin: 0 auto;
+
 }
 #container-left{
     display: flex;
@@ -29,8 +40,8 @@ body *{
 #profile {
     text-align: center;
     height: 292px;
-    background: rgb(75, 43, 43);
-    border-radius: 15px;
+    background: var(--background-color);
+    border-radius: var(--border-radius);
     padding: 32px 0 49px 0;
 }
 #profile img {
@@ -50,15 +61,68 @@ body *{
 
 /*Links*/
 #links{
-    background: rgb(75, 43, 43);
-    border-radius: 15px;
-    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    background: var(--background-color);
+    border-radius: var(--border-radius);
+    padding: 10px 40px;
     
 }
 #links .line {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 16px;
     font-weight: 500;
     text-decoration: none;
+}
+#links .line ion-icon {
+    font-size: 24px;
+    padding: 2px;
+}
+#links .line p{
+    font-size: 16px;
+}
+#links .line a{
+    font-size: 16px;
+}
+/* Tecnologias */
+#technologies{
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    padding: 30px 5px 30px 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+#technologies h1{
+    font-size: 20px;
+    font-weight: 700;
+}
+#technologies .line p{
+    display: flex;
+    background-color: #CB92B1;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 86px;
+    height: 24px;
+    font-weight: 700;
+    font-size: 12px;
+}
+#technologies .line {
+    display: flex;
+    gap: 15px;
+    padding-top: 15px;
+    padding-left: 10px;
+
+}
+#my-projects {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    width: 952px;
+    height: 86px;
 }
