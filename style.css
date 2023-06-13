@@ -12,6 +12,10 @@ body{
 a{
     text-decoration: none;
 }
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
 
 body *{
     font-family: 'Oswald', sans-serif;
@@ -28,7 +32,6 @@ body *{
     padding: 40px;
     max-width: 1440px;
     margin: 0 auto;
-
 }
 #container-left{
     display: flex;
@@ -54,7 +57,7 @@ body *{
     line-height: 29px;
 }
 #profile .p2{
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 16px;
 }
@@ -81,19 +84,18 @@ body *{
     padding: 2px;
 }
 #links .line p{
-    font-size: 16px;
+    font-size: 17px;
 }
 #links .line a{
-    font-size: 16px;
+    font-size: 17px;
 }
 /* Tecnologias */
 #technologies{
     background-color: var(--background-color);
     border-radius: var(--border-radius);
-    padding: 30px 5px 30px 20px;
+    padding: 30px 30px 30px 20px;
     display: flex;
     flex-direction: column;
-
 }
 #technologies h1{
     font-size: 20px;
@@ -108,21 +110,92 @@ body *{
     width: 86px;
     height: 24px;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 15px;
 }
 #technologies .line {
     display: flex;
     gap: 15px;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-left: 10px;
-
 }
-#my-projects {
+/*Experiências*/
+#experiences {
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    padding: 30px 30px 30px 20px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+}
+#experiences h1{
+    font-size: 20px;
+}
+#experiences .row-experiences{
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+#experiences li{
+    font-size: 18px;
+    font-weight: 700;
+}
+/*Educação*/
+#education {
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    padding: 30px 30px 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+#education h1{
+    font-size: 20px;
+}
+#education .row-education {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+#education li{
+    font-size: 18px;
+    font-weight: 700;
+}
+/*Container Right */
+#container-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+/*Meus projetos*/
+#my-projects{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
     background-color: var(--background-color);
     border-radius: var(--border-radius);
     padding: 30px;
     width: 952px;
     height: 86px;
+}
+#my-projects a{
+    font-size: 16px;
+}
+/*Projects*/
+#projects {
+    display: flex;
+    gap: 30px;
+    width: 461px;
+    height: 186px;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    padding: 30px;
+}
+#projects .logo-name {
+   display: flex;
+   flex-direction: row;
+   gap: 16px;
+   font-size: 18px;
+}
+#projects ion-icon {
+    font-size: 24px;
 }
