@@ -183,11 +183,14 @@ body *{
 /*Projects*/
 #projects {
     display: flex;
+    flex-direction: row;
     gap: 30px;
-    width: 461px;
-    height: 186px;
+}
+#projects .project {
     background-color: var(--background-color);
     border-radius: var(--border-radius);
+    width: 461px;
+    height: 186px;
     padding: 30px;
 }
 #projects .logo-name {
@@ -199,3 +202,25 @@ body *{
 #projects ion-icon {
     font-size: 24px;
 }
+#projects .project .tecnologia-utilizada {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    
+}
+#projects .project .tecnologia-utilizada p { 
+   color: #CB92B1;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 700;
+   font-style: italic;
+}
+#projects .um .tecnologia-utilizada p { 
+    color: #CB92B1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 12px;
+ }
+ 
+
