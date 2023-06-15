@@ -207,7 +207,6 @@ body *{
     flex-direction: column;
     justify-content: end;
     align-items: end;
-    
 }
 #projects .project .tecnologia-utilizada p { 
    color: #CB92B1;
