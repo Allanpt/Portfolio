@@ -30,7 +30,6 @@ body *{
     gap: 60px;
     width: 100%;
     padding: 40px;
-    max-width: 1440px;
     margin: 0 auto;
 }
 #container-left{
@@ -164,6 +163,7 @@ body *{
 #container-right {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 30px;
 }
 /*Meus projetos*/
@@ -174,7 +174,8 @@ body *{
     background-color: var(--background-color);
     border-radius: var(--border-radius);
     padding: 30px;
-    width: 952px;
+    max-width: 830px;
+    min-width: 400px;
     height: 86px;
 }
 #my-projects a{
@@ -183,13 +184,15 @@ body *{
 /*Projects*/
 #projects {
     display: flex;
-    flex-direction: row;
     gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
-#projects .project {
+#projects .project{
     background-color: var(--background-color);
     border-radius: var(--border-radius);
-    width: 461px;
+    min-width: 400px;
+    width: 400px;
     height: 186px;
     padding: 30px;
 }
