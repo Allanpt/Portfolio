@@ -174,7 +174,6 @@ body *{
     background-color: var(--background-color);
     border-radius: var(--border-radius);
     padding: 30px;
-    max-width: 830px;
     min-width: 400px;
     height: 86px;
 }
